@@ -104,7 +104,7 @@ p.subtitle {
 	z-index: 10;
 }
 
-#alt_body !(.download_img *) {
+#alt_body p {
 	text-align: justify;
 }
 
