@@ -51,8 +51,8 @@ p, ul, form{
 	position: fixed;
 	top:0px;
 	left: 0px;
-	margin-left: 10vw;
-	width: 80vw;
+	margin-left: 10%;
+	width: 80%;
 	height: 100%;
 	background-color: rgba(0,0,0,0.6);
 	z-index: 1;
@@ -99,8 +99,8 @@ p.subtitle {
 	margin-top: 7.8em;
 	color: white;
 	position: relative;
-	margin-left:12%;
-	margin-right:12%;
+	margin-left: 12%;
+	margin-right: 12%;
 	z-index: 10;
 }
 
@@ -242,7 +242,7 @@ hr {
 	display: inline-block;
 	text-align: center;
 	padding-top: 5%;
-	margin-left: 6.85vw;
+	margin-left: 3.5vw;
 	font-size: 1.7vw;
 }
 
@@ -250,9 +250,9 @@ hr {
 	text-decoration: none;
 }
 
-.download_img:nth-child(3n) {
+/*.download_img:nth-child(3n) {
 	margin-left: 0;
-}
+}*/
 
 .download_img img {
 	width: 20vw;
