@@ -1,0 +1,327 @@
+/*
+* default CSS stylesheet
+* Aurélien ROBINEAU | Site WEB personnel
+* Projet WIM UIT d'informatique
+*/
+
+/**************font declaration**************/
+@font-face {
+	font-family: 'Titre';
+	src: url("./fonts/Capsuula.ttf");
+}
+
+@font-face {
+	font-family: 'Texte';
+	src: url("./fonts/CaviarDreams.ttf");
+}
+/****************************/
+
+/**************general settings**************/
+body {
+	overflow-y: scroll;
+	background-image:url(./css_pictures/style1_background.jpg);
+	background-size:cover;
+	background-attachment: fixed;
+	font-family: Texte;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+p, ul, form{
+	font-size: 1.5em;
+}
+/****************************/
+
+/**************background shapes settings**************/
+#shape_title_style2 {
+	display: none;
+}
+
+#menu_shape{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 7vw;
+	background-color: rgba(0,0,0,0.96);
+	z-index: 20;
+}
+
+#back_shape {
+	position: fixed;
+	top:0px;
+	left: 0px;
+	margin-left: 10vw;
+	width: 80vw;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 1;
+}
+/****************************/
+
+/**************menu settings**************/
+#menu {
+	font-family: "Titre";
+	margin-top: 1.1vw;
+	margin-left: 20%;
+	color: white;
+}
+
+#menu p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+p.title {
+	font-size: 2vw;
+}
+
+p.subtitle {
+	font-size: 1.5vw;
+}
+
+#menu table {
+		width: 80%;
+}
+
+#menu_style1 {
+	font-size: 135%;
+	padding-left: 20%;
+}
+
+#menu_style2{
+	display: none;
+}
+/****************************/
+
+/**************alt_body settings**************/
+#alt_body {
+	margin-top: 7.8em;
+	color: white;
+	position: relative;
+	margin-left:12%;
+	margin-right:12%;
+	z-index: 10;
+}
+
+#alt_body !(.download_img *) {
+	text-align: justify;
+}
+
+#alt_body h3 {
+	color: white;
+	text-shadow: 1px 1px 1px rgb(230,0,40);
+	font-size: 2.5em;
+	text-align: center;
+	padding-bottom: 0;
+	margin-bottom: 0.3em;
+}
+
+#alt_body h5 {
+	font-size: 1.75em;
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+/****************************/
+
+/**************casual a-link settings**************/
+a:link {
+	color: white;
+}
+
+a.casual_link {
+	font-size: 1.5em;
+}
+
+a:visited{
+	color: white;
+}
+
+a:hover{
+	color: rgb(230,0,40);
+}
+
+a:active{
+	color: rgb(255,60,100);
+}
+/****************************/
+
+/**************menu's a-link settings**************/
+#menu a {
+	background-color: rgb(230,0,40);
+    border: none;
+    color: white;
+ 	width: 10vw;
+ 	line-height: 3.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0px;
+    font-size: 1vw;
+    font-family: Texte;
+	float: left;
+}
+
+#menu a.current{
+	background-color: white;
+    color: rgb(230,0,40);
+    cursor: not-allowed;
+}
+
+#menu a:hover {
+    background-color: rgb(180,0,0);
+    color: white;
+}
+
+#menu a:hover.current{
+	background-color: white;
+    color: rgb(230,0,40);
+    border: none;
+}
+
+#menu a:active {
+	background-color: rgb(250,20,60);;
+}
+/****************************/
+
+/**************form settings**************/
+form input[type=text],
+form input[type=number],
+form input[type=email],
+form textarea {
+	background-color: white;
+	border-width: 1px;
+	border-color: rgb(230,0,40);
+	padding: 0.4em;
+	font-size: 0.8em;
+	font-family: Texte;
+}
+
+form textarea {
+	width: 98.5%;
+	resize: none;
+}
+form input[type=submit] {
+	margin-left: 2px;
+	font-family: Texte;
+	background-color: rgb(230,0,40);
+	border: none;
+    color: white;
+ 	width: 8em;
+ 	line-height: 1.5em;
+    text-align: center;
+    font-size: 0.9em;
+    border-radius: 0px;
+}
+
+form input[type=submit]:hover {
+	background-color: rgb(180,0,0);
+}
+
+form input:active {
+	background-color: rgb(250,20,60);;
+}
+/****************************/
+
+/**************separation strip settings**************/
+hr {
+    display: block;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    border: none;
+    height: 2px;
+    background-color: rgb(230,0,40);
+}
+/****************************/
+
+/**************download elements' settings**************/
+.download_img {
+	display: inline-block;
+	text-align: center;
+	padding-top: 5%;
+	margin-left: 6.85vw;
+	font-size: 1.7vw;
+}
+
+.download_img a {
+	text-decoration: none;
+}
+
+.download_img:nth-child(3n) {
+	margin-left: 0;
+}
+
+.download_img img {
+	width: 20vw;
+	height: 16vw;
+}
+
+h4 {
+	margin-bottom: 0;
+}
+/****************************/
+
+/**************change_style elements' settings**************/
+#change_style {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 7.5em;
+	height: 3.5em;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	border-top-left-radius: 20px;
+	text-align: center;
+	z-index: 40;
+}
+
+#change_style button {
+	padding-left: 2%;
+	border: solid 1px white;
+	margin-top: 4%;
+	display: inline;
+	width: 2em;
+	height: 2em;
+	background-color: rgb(230,0,40);
+}
+
+#change_style button:nth-child(2) {
+	background-color: rgb(23, 0, 15);
+}
+
+#change_style button:hover {
+	border-color: cyan;
+}
+
+#change_style img {
+	width: 1.6em;
+	height: 1.6em;
+	margin-bottom: 10%;
+}
+
+.quote2 {
+	visibility: hidden;
+}
+/****************************/
+
+/**************go top page elements' settings**************/
+#anchor_tp {
+	position: absolute;
+	top: 0;
+	margin-top: 0;
+}
+
+#button_tp {
+	position: relative;
+	display: block;
+	width: 4%;
+	height: 4%;
+	left: 0px;
+	margin-top: 2em;
+	margin-left: 50%;
+	z-index: 30; 
+}
+/****************************/

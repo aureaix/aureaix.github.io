@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<!--
+* Aurélien ROBINEAU | Site WEB personnel
+* HTML Home page
+* Projet WIM UIT d'informatique
+-->
+
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Aurélien ROBINEAU - Accueil</title>
+	<meta name="description" content="Page d'accueil du site WEB personnel d'Aurélien ROBINEAU. Réalisé dans le cadre du projet de WIM.">
+	<meta name="keywords" content="IUT, informatique, projet, Aix-Marseille, Aurélien, Robineau, accueil">
+	<link rel="icon" href="./html_pictures/icon.png"/>
+	<link rel="stylesheet" type="text/css" href="./css/style1.css" title="style1" />
+	<link rel="stylesheet" type="text/css" href="./css/style2.css" title="style2" />
+	<script type="text/javascript" src="./javascript/choose_style.js"></script>
+</head>
+
+<body>
+
+	<div id="anchor_tp"></div>
+
+	<div id="back_shape"></div>
+	
+	<div id="menu_shape">
+		<div id="menu">
+			<table>
+				<tr>
+					<th><p class="title">Aurélien ROBINEAU</p></th>
+					<th rowspan="2">
+						<div id="menu_style1">
+							<a class="current" href="./home.html">Accueil</a>
+							<a href="./download.html">Téléchargement</a>
+							<a href="./other.html">Autre</a>
+						</div>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<p class="subtitle">Site WEB personnel</p>
+					</th>
+				</tr>
+			</table>
+			<div id="menu_style2">
+				<a class="current" href="./home.html"><img src="./html_pictures/menu2_home.png" alt="./html_pictures/alt/menu2_home.jpg"/></a>
+				<a href="./download.html"><img src="./html_pictures/menu2_download.png" alt="./html_pictures/alt/menu2_download.jpg"/></a>
+				<a href="./other.html"><img src="./html_pictures/menu2_other.png" alt="./html_pictures/alt/menu2_other.jpg"/></a>
+			</div>
+		</div>
+	</div>
+
+	<div id="shape_title_style2">
+		<h1>Aurélien ROBINEAU - Site WEB personnel</h1>
+		<h2>| Accueil</h2>
+	</div>
+
+	<div id="alt_body">
+		<h3>Equipe</h3>
+		<hr>
+		<p>L'équipe du projet est constituée de cinq membres :</p>
+		<ul>
+			<li>Nicolas Meyniel</li>
+			<li>Clement Robbe</li>
+			<li>Quentin Pla</li>
+			<li>Benjamin Le Grand</li>
+			<li>Aurélien Robineau</li>
+		</ul>
+		<p>Nous appartenons tous au groupe 4 de l'IUT d'informatique d'Aix en Provence. L'équipe a été créée aléatoirement mais l'ambiance est bonne.</p>
+		<h3>Projet</h3>
+		<hr>
+		<p>
+			De nos jours, la plupart des sites d'achats disposent d'un espace commentaire. La majorité de ces espaces contiennent des commentaires en trop faible quantité, peu fiables, parfois publiés par les constructeurs eux-mêmes afin de venter à tort le produits.
+		</p>
+		<p>
+			Notre projet, nommé <em>Checked</em>, a pour but de créer un espace de commentaire fiable, permettant aux internautes d'obtenir de bons renseignements sur leurs achats en ligne. C'est un site internet (une application pour smartphone sera éventuellement développée) ayant pour but de recueillir des commentaires d'utilisateurs à propos de produits high-techs. Ceux-ci seront notés par la communauté et classés afin de faire apparaître les commentaires les plus fiables en premiers. Chaque commentaire se verra attribuer un degré de fiabilité public, calculé en fonction de plusieurs éléments. Le principe n'est pas seulement de classer les commentaires selon leur fiabilité mais aussi selon leur utilité. Des commentaires complets et construits seront donc mis plus en valeur qu'un simple "Rien à redire".<br>
+			Si nous avons suffisamment de temps, une API sera développée afin de permettre aux vendeurs d'intégrer directement dans leurs sites un espace commentaire sans le coder.
+		</p>
+		<p>
+			De nombreux éléments permettront d'empêcher la fraude, notamment au niveau des bots, des hackeurs ou des fraudeurs. Pour avoir plus de renseignements sur les méthodes que nous utiliseront, vous pouvez télécharger la fiche d'avant projet et les comptes rendus de réunion dans l'onglet "Téléchargement".
+		</p>
+		<a class="casual_link" href="https://basecamp.com/2577854/projects/14640204" target="_blank">Voir le projet sur BaseCamp</a>
+		<h3>Votre avis</h3>
+		<hr>
+		<form id="opinion" action="mailto:robineau.aure@gmail.com" method="post">
+  			<fieldset>
+    			<legend>Informations personnelles</legend>
+	  			<input type="radio" name="genre" value="homme" > Homme
+	 	 		<input type="radio" name="genre" value="femme"> Femme
+	 			<input type="radio" name="genre" value="autre"> Autre / Je m'abstiens<br><br>
+	 			<label for="prenom">Prénom</label><br>
+	 			<input type="text" name="prenom" id="prenom" placeholder="Prénom"><br>
+	 			<label for="nom">Nom</label><br>
+	 			<input type="text" name="nom" id="nom" placeholder="Nom"><br>
+	 			<label for="age">Age</label><br>
+	 			<input type="number" name="age" id="age" placeholder="Age"><br>
+	 			<label for="email">Email</label><br>
+	 			<input type="email" name="adresse_email" id="email" placeholder="Adresse Email">
+ 			</fieldset>
+ 			<fieldset>
+ 				<legend>Votre avis</legend>
+ 				<textarea name="avis" rows="5" cols="50" placeholder="Rédigez votre avis"></textarea><br>
+ 			</fieldset>
+ 			<input type="submit" value="Envoyer">
+		</form>
+	</div>
+
+	<div id="change_style">Change style<!--css stylesheet turns back default when changing page with Google Chrome-->
+		<button onclick="setActiveStyleSheet('style1'); return false;"><img class="quote1" src="./html_pictures/checked_style.png" alt="./html_pictures/alt/checked_style.jpg"/></button>
+		<button onclick="setActiveStyleSheet('style2'); return false;"><img class="quote2" src="./html_pictures/checked_style.png" alt="./html_pictures/alt/checked_style.jpg"/></button>
+	</div>
+
+	<a href="#anchor_tp" title="Haut"><img id="button_tp" src="./html_pictures/goto_toppage.png" alt="./html_pictures/alt/goto_toppage.jpg"/></a>
+
+</body>
+
+</html>

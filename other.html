@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+ <!--
+* Aurélien ROBINEAU | Site WEB personnel
+* HTML Other page
+* Projet WIM UIT d'informatique
+-->
+
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Aurélien ROBINEAU - Autre</title>
+	<meta name="description" content="Page d'informations diverses du site WEB personnel d'Aurélien ROBINEAU. Réalisé dans le cadre du projet de WIM.">
+	<meta name="keywords" content="IUT, informatique, projet, Aix-Marseille, Aurélien, Robineau, autres, informations">
+	<link rel="icon" href="./html_pictures/icon.png"/>
+	<link rel="stylesheet" type="text/css" href="./css/style1.css" title="style1" />
+	<link rel="stylesheet" type="text/css" href="./css/style2.css" title="style2" />
+	<script type="text/javascript" src="./javascript/choose_style.js"></script>
+</head>
+
+<body>
+
+	<div id="back_shape"></div>
+
+	<div id="menu_shape">
+		<div id="menu">
+			<table>
+				<tr>
+					<th><p class="title">Aurélien ROBINEAU</p></th>
+					<th rowspan="2">
+						<div id="menu_style1">
+							<a href="./home.html">Accueil</a>
+							<a href="./download.html">Téléchargement</a>
+							<a class="current" href="./other.html">Autre</a>
+						</div>
+					</th>
+				</tr>
+				<tr>
+					<th><p class="subtitle">Site WEB personnel</p></th>
+				</tr>
+			</table>
+			<div id="menu_style2">
+				<a href="./home.html"><img src="./html_pictures/menu2_home.png" alt="./html_pictures/alt/menu2_home.jpg"/></a>
+				<a href="./download.html"><img src="./html_pictures/menu2_download.png" alt="./html_pictures/alt/menu2_download.jpg"/></a>
+				<a class="current" href="./other.html"><img src="./html_pictures/menu2_other.png" alt="./html_pictures/alt/menu2_other.jpg"/></a>
+			</div>
+		</div>
+	</div>
+
+	<div id="shape_title_style2">
+		<h1>Aurélien ROBINEAU - Site WEB personnel</h1>
+		<h2>| Autre</h2>
+	</div>
+
+	<div id="alt_body">
+		<h3>Liens externes</h3>
+		<hr>
+		<h5>API</h5>
+			<a class="casual_link" href="https://openclassrooms.com/courses/utilisez-des-api-rest-dans-vos-projets-web/qu-est-ce-qu-une-api" target="_blank">Qu'est-ce qu'une API ?</a>
+		<h5>Espaces commentaire peu complets/fiables</h5>
+			<a class="casual_link" href="https://www.amazon.fr" target="_blank">Amazon.fr</a><br>
+			<a class="casual_link" href="http://www.priceminister.com" target="_blank">PriceMinister</a>
+		<h5>Sécurité</h5>
+			<a class="casual_link" href="https://fr.wikipedia.org/wiki/Chiffrement_RSA" target="_blank">Chiffrement RSA</a><br>
+			<a class="casual_link" href="https://www.clicktale.com/" target="_blank">Analyse du mouvement de la souris</a><br>
+			<a class="casual_link" href="http://www.lefigaro.fr/secteur/high-tech/pratique/2016/04/19/32002-20160419ARTFIG00187-la-frappologie-quand-votre-clavier-en-dit-beaucoup-sur-vous.php" target="_blank">Frappologie</a><br>
+			<a class="casual_link" href="https://www.thryv.com/blog/honeypot-technique/" target="_blank">Honeypot</a><br>
+		<p>Plus de liens dans la fiche d'avant projet disponible dans l'onglet "Téléchargement".</p>
+		<h5>Site vitrine du projet</h5>
+			<a class="casual_link" href="https://0bscurax.github.io/checked/" target="_blank">Checked</a>
+		<h3>Contact</h3>
+		<hr>
+		<p>Aurélien ROBINEAU<br>
+			IUT Université d'Aix-Marseille<br>
+			Département informatique, site d'Aix (Gaston Berger)<br>
+			1<sup>ère</sup> année, groupe 4A
+		</p>
+		<p><strong>E-mail :</strong> aurelien.robineau@etu.uviv-amu.fr</p>
+	</div>
+
+	<div id="change_style">Change style<!--css stylesheet turns back default when changing page with Google Chrome-->
+		<button onclick="setActiveStyleSheet('style1'); return false;"><img class="quote1" src="./html_pictures/checked_style.png" alt="./html_pictures/alt/checked_style.jpg"/></button>
+		<button onclick="setActiveStyleSheet('style2'); return false;"><img class="quote2" src="./html_pictures/checked_style.png" alt="./html_pictures/alt/checked_style.jpg"/></button>
+	</div>
+	
+</body>
+
+</html>

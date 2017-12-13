@@ -1,0 +1,317 @@
+/*
+* alternative CSS stylesheet
+* Aurélien ROBINEAU | Site WEB personnel
+* Projet WIM UIT d'informatique
+*/
+
+/**************font declaration**************/
+@font-face {
+	font-family: 'Titre';
+	src: url("./fonts/Capsuula.ttf");
+}
+
+@font-face {
+	font-family: 'Texte';
+	src: url("./fonts/CaviarDreams.ttf");
+}
+/****************************/
+
+/**************general settings**************/
+body {
+	overflow-y: scroll;
+	background-image: url(./css_pictures/style2_background.jpg);
+	background-size:cover;
+	background-attachment: fixed;
+	font-family: Texte;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+p, ul, form{
+	font-size: 1.5em;
+}
+/****************************/
+
+/**************background shapes settings**************/
+#menu_shape {
+	position: fixed;
+	top: 0;
+	width: 7em;
+	height: 100%;
+	background-color: rgb(124, 0, 28);
+	z-index: 20;
+}
+
+#shape_title_style2 {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	top: 0;
+	left: 0;
+	margin-left: 7em; 
+	width: 93%;
+	height: 2em;
+	z-index: 15;
+}
+/****************************/
+
+/**************title settings**************/
+#shape_title_style2 h1 {
+	margin-left: 1%;
+	display: inline;
+	padding-top: 1em;
+	font-size: 150%;
+}
+
+#shape_title_style2 h2 {
+	margin-left: 1%;
+	display: inline;
+	margin-top: 1em;
+	font-size: 120%;
+}
+/****************************/
+
+/**************menu settings**************/
+#menu table {
+	display: none;
+}
+
+#menu_style2 {
+	margin-top: 21vh;
+	text-align: center;
+}
+
+#menu_style2 img {
+	width: 6.5em;
+}
+/****************************/
+
+/**************alt_body settings**************/
+#alt_body {
+	color: white;
+	margin-top: 1em;
+	position: relative;
+	margin-left:12em;
+	margin-right:5em;
+	z-index: 10;
+}
+
+#alt_body !(.download_img *) {
+	text-align: justify;
+}
+
+#alt_body h3 {
+	color: rgb(124, 0, 28);
+	font-size: 2.5em;
+	padding-bottom: 0em;
+	margin-bottom: 0.3em;
+	padding-top: 0.5em;
+	text-shadow: 0px 0px 1px white;
+}
+
+#alt_body h5 {
+	font-size: 1.75em;
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+
+.livrables {
+	display: none;
+}
+/****************************/
+
+/**************casual a-link settings**************/
+a:link {
+	color: white;
+}
+
+a.casual_link {
+	font-size: 1.5em;
+}
+
+a:visited{
+	color: white;
+}
+
+a:hover{
+	color: rgb(124, 0, 28);
+}
+
+a:active{
+	color: rgb(164, 20, 68);
+}
+/****************************/
+
+/**************menu's a-link settings**************/
+#menu a {
+	background-color: rgb(124, 0, 28);
+    border: none;
+    display: block;
+    width: 6.5em;
+}
+
+#menu a.current {
+	border: solid 4px;
+	border-left: none;
+	border-color: rgb(23, 0, 15);
+	width: 10em;
+	cursor: not-allowed;
+}
+
+#menu a:hover {
+    background-color: rgb(94, 0, 0);
+    width: 9em;
+}
+
+#menu a:hover.current{
+	border: solid 4px;
+	border-left: none;
+	border-color: rgb(23, 0, 15);
+	width: 10em;
+}
+
+#menu a:active {
+	background-color: rgb(154, 30, 58);
+}
+/****************************/
+
+/**************form settings**************/
+*[placeholder] {
+    color: white;
+}
+
+form input[type=text],
+form input[type=number],
+form input[type=email],
+form textarea {
+	background-color: rgba(255, 255, 255, 0.05);
+	border: solid 2px;
+	border-color: rgb(124, 0, 28);
+	padding: 0.4em;
+	font-size: 0.8em;
+	font-family: Texte;
+}
+
+form input[type=submit] {
+	margin-left: 2px;
+	font-family: Texte;
+	background-color: rgb(124, 0, 28);
+	border: none;
+    color: white;
+ 	width: 8em;
+ 	line-height: 1.5em;
+    text-align: center;
+    font-size: 0.9em;
+    border-radius: 0px;
+}
+
+form input[type=submit]:hover {
+	background-color: rgb(94, 0, 0);
+}
+
+form input:active {
+	background-color: rgb(154, 30, 58);
+}
+
+form textarea {
+	width: 98.5%;
+	resize: none;
+}
+/****************************/
+
+/**************separation strip settings**************/
+hr {
+    display: block;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 4em;
+    margin-left: 0;
+    margin-right: 30%;
+    left: 0;
+    border: none;
+    height: 3px;
+    width: 70%;
+    background-color: rgb(194, 70, 98);
+}
+/****************************/
+
+/**************download elements' settings**************/
+.download_img {
+	display: inline-block;
+	text-align: center;
+	padding-top: 5%;
+	margin-left: 5vw;
+	font-size: 1.7vw;
+}
+
+.download_img a {
+	text-decoration: none;
+}
+
+.download_img img {
+	width: 22vw;
+	height: 17.6vw;
+}
+/****************************/
+
+/**************change_style elements' settings**************/
+#change_style {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 7.5em;
+	height: 3.5em;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	border-top-left-radius: 20px;
+	text-align: center;
+	z-index: 40;
+}
+
+#change_style button {
+	padding-left: 2%;
+	border: solid 1px white;
+	margin-top: 4%;
+	display: inline;
+	width: 2em;
+	height: 2em;
+	background-color: rgb(230,0,40);
+}
+
+#change_style button:nth-child(2) {
+	background-color: rgb(23, 0, 15);
+}
+
+#change_style button:hover {
+	border-color: cyan;
+}
+
+#change_style img {
+	width: 1.6em;
+	height: 1.6em;
+	margin-bottom: 10%;
+}
+
+.quote1 {
+	visibility: hidden;
+}
+/****************************/
+
+
+/**************go top page elements' settings**************/
+#anchor_tp {
+	position: absolute;
+	top: 0;
+	margin-top: 0;
+}
+
+#button_tp {
+	position: relative;
+	display: block;
+	width: 4%;
+	height: 4%;
+	margin-top: 2em;
+	margin-left: 50%;
+	z-index: 30; 
+}
+/****************************/
