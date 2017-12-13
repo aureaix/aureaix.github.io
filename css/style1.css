@@ -250,10 +250,6 @@ hr {
 	text-decoration: none;
 }
 
-/*.download_img:nth-child(3n) {
-	margin-left: 0;
-}*/
-
 .download_img img {
 	width: 20vw;
 	height: 16vw;
